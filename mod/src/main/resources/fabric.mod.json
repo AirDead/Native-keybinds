@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "nativekeybinds",
+  "version": "1.0",
+  "name": "nKeyBinds",
+  "description": "Keybinds for the native controller support",
+  "authors": [
+    "Airdead"
+  ],
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.airdead.keybind.mod.Main"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

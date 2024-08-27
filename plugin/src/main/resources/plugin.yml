@@ -1,0 +1,3 @@
+name: NativeKeybind
+main: dev.airdead.keybind.plugin.Plugin
+version: 1.0
