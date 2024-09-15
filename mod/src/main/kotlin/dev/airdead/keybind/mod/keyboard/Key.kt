@@ -1,8 +1,6 @@
 package dev.airdead.keybind.mod.keyboard
 
 internal enum class Key(val code: Int) {
-    ENTER(13),
-    ESCAPE(27),
     SPACE(32),
     LEFT_ARROW(37),
     UP_ARROW(38),
@@ -43,24 +41,5 @@ internal enum class Key(val code: Int) {
     NUM_6(54),
     NUM_7(55),
     NUM_8(56),
-    NUM_9(57),
-    F1(112),
-    F2(113),
-    F3(114),
-    F4(115),
-    F5(116),
-    F6(117),
-    F7(118),
-    F8(119),
-    F9(120),
-    F10(121),
-    F11(122),
-    F12(123);
-
-
-    companion object {
-        fun fromCode(code: Int): Key? {
-            return Key.entries.find { it.code == code }
-        }
-    }
+    NUM_9(57);
 }

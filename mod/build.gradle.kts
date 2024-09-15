@@ -1,5 +1,13 @@
 plugins {
     id("fabric-loom") version "1.6-SNAPSHOT"
+
+}
+
+repositories {
+    maven {
+        name = "Fabric"
+        url = uri("https://maven.fabricmc.net/")
+    }
 }
 
 dependencies {
@@ -10,14 +18,14 @@ dependencies {
 
     // Fabric API
     modImplementation("net.fabricmc.fabric-api:fabric-api:0.92.2+1.20.1")
-    modImplementation("net.fabricmc:fabric-language-kotlin:1.12.0+kotlin.2.0.10")
 
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.12.0+kotlin.2.0.10")
 }
 
 tasks.processResources {
     inputs.property("version", project.version)
 
     filesMatching("fabric.mod.json") {
-        expand("version" to project.version)
+        expand(mapOf("version" to project.version))
     }
 }
